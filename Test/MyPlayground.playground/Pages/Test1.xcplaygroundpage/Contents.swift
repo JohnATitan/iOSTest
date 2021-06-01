@@ -296,3 +296,9 @@ if let notNull1 = optional1, let notNull2 = optional2, let notNull3 = optional3 
 } else {
     print("Si es nulo")
 }
+
+if let notNull1 = optional1 {
+    print("\(notNull1) no es nulo")
+} else {
+    print("Si es nulo")
+}

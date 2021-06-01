@@ -10,9 +10,10 @@ class Book {
 }
 
 var student = Student()
+var student2 = Student()
 
-print(student.name) // IMPRIMIRA NULO
-print(student.book?.pages) // IMPRIMIRA NULO
+// print(student.name) // IMPRIMIRA NULO
+// print(student.book?.pages) // IMPRIMIRA NULO
 
 student.name = "Jonathan"
 student.book = Book()
@@ -39,3 +40,5 @@ optionalString = "No te metas perra"
 print(validateOptional())
 
 print("para validar el token de git")
+
+
