@@ -1,6 +1,6 @@
 import Foundation
 
-extension Double {
+extension Double { // AL TIPO DE DATO SE LE AGREGAN MAS FUNCIONALIDADES
     var km:Double{
         return self / 1000
     }
@@ -16,18 +16,18 @@ extension Double {
 
 var myMeters:Double = 5000
 
-print(myMeters.km)
-print(myMeters.m)
-print(myMeters.cm)
+print(myMeters.km) // FUNCIONALIDAD NUEVA DEL NUEVO TIPO
+print(myMeters.m) // FUNCIONALIDAD NUEVA DEL NUEVO TIPO
+print(myMeters.cm) // FUNCIONALIDAD NUEVA DEL NUEVO TIPO
 
-protocol PersonProtocol {
+protocol PersonProtocol { // PROTOCOLO DE ATRIBUTOS Y METODOS
     var name: String {get set}
     var age: Int {get set}
     
     func fullName() -> String
 }
 
-struct Programmer : PersonProtocol {
+struct Programmer : PersonProtocol { // IMPLEMENTACION DE PROTOCOLO EN CLASE
     var name: String
     var age: Int
     var language: String
@@ -37,7 +37,7 @@ struct Programmer : PersonProtocol {
     }
 }
 
-struct Teacher : PersonProtocol {
+struct Teacher : PersonProtocol { // IMPLEMENTACION DE PROTOCOLO EN CLASE
     var name: String
     var age: Int
     var subject: String

@@ -1,12 +1,11 @@
 import Foundation
 
-protocol SecondClassListener{
+protocol SecondClassListener{ // INTERFAZ
     func onListener()
 }
 
 
-class FirstClass:SecondClassListener{
-    
+class FirstClass:SecondClassListener{ // CLASE QUE IMPLEMENTA LA INTERFAZ
     func initListerner() {
         let secondClass = SecondClass()
         secondClass.listener = self
@@ -18,11 +17,11 @@ class FirstClass:SecondClassListener{
     }
 }
 
-class SecondClass {
+class SecondClass { // CLASE QUE RECIBE LA INTERFAZ
     var listener:SecondClassListener?
     
     func callListener(){
-        for n in 1...5{
+        for _ in 1...5{
             print("A second")
             sleep(1)
         }

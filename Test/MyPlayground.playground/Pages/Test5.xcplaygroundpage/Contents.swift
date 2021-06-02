@@ -1,7 +1,7 @@
 import Foundation
 
 
-struct ChessPiece {
+struct ChessPiece { // ESTRUCTURAS ANIDADAS
     
     var color:Color
     var type:PieceType

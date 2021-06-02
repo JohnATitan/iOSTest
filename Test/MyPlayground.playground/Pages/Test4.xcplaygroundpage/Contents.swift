@@ -40,6 +40,9 @@ if let str4 = example.attr3String, let str5 = example2.attr3String {
     print("\(str4) - \(str5)")
 }
 
+
+// CASTEO DE CLASES
+
 var myString = "Nintendo"
 var myInt = 1994
 
@@ -56,8 +59,8 @@ myClass.age = 27
 var myArray:[Any] = [myString, myInt, myClass]
 
 for item in myArray {
-    if item is String {
-        let itString = item as! String
+    if item is String { // IS PREGUNTA POR EL TIPO
+        let itString = item as! String // AS HACE EL CASTEO (! PARA DESEMPAQUETAR EL DATO)
         print("El objeto es String \(itString)")
     } else if item is Int {
         let itInt = item as! Int
@@ -68,7 +71,7 @@ for item in myArray {
     }
 }
 
-for item in myArray {
+for item in myArray { // MANERA CORTA DE HACER EL CASTEO
     if let itString = item as? String{
         print("El objeto es String \(itString)")
     } else if let itInt = item as? Int{
