@@ -5,5 +5,8 @@
         <page name='Test1'/>
         <page name='Test3'/>
         <page name='Test4'/>
+        <page name='Test5'/>
+        <page name='Test6'/>
+        <page name='Test7'/>
     </pages>
 </playground>

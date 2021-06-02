@@ -40,5 +40,3 @@ optionalString = "No te metas perra"
 print(validateOptional())
 
 print("para validar el token de git")
-
-
